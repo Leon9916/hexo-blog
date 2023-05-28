@@ -59,8 +59,8 @@ class Profile extends Component {
 
                                 function getYiyan(){
                                     $.when(
-                                      $.getJSON('http://111.230.213.88/mockData/weathers.json'),
-                                      $.getJSON('http://111.230.213.88/mockData/diaries.json')
+                                      $.getJSON('/json_data/weathers.json'),
+                                      $.getJSON('/json_data/diaries.json')
                                     ).done(function(data1, data2) {
                                       // 在这里对两个接口的数据进行操作
                                       $('#hitokoto').html("");
