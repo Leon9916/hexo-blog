@@ -14,10 +14,10 @@
 因为修改了原作者源码，有什么问题请先联系我，不要去麻烦原作者了，能自己解决的问题就不要麻烦别人了，每个人的时间都很宝贵。  
 膜拜和感谢所有模块的原作者,orz👻,辛苦了。  
 
-**本仓库为纯主题仓库，博客主题完整仓库请移步为[hexo-theme-icarus-removeif](https://github.com/Liao-Vue-love/hexo-theme-icarus-removeif)**
+**本仓库为纯主题仓库，博客主题完整仓库请移步为[hexo-theme-icarus-removeif](https://github.com/Leon9916/hexo-blog/hexo-theme-icarus-removeif)**
 
 
-**增加adsense分支，此分支信息流中加入adsense广告，如[本博客](https://removeif.github.io/)adsense每个地方的使用方式，具体请移步[branch](https://github.com/Liao-Vue-love/hexo-theme-amazing/tree/adsense)**
+**增加adsense分支，此分支信息流中加入adsense广告，如[本博客](https://removeif.github.io/)adsense每个地方的使用方式，具体请移步[branch](https://github.com/Leon9916/hexo-blog/hexo-theme-amazing/tree/adsense)**
 
 线上博客：[欢迎围观](https://removeif.github.io/)，[博客源码Live Demo](https://removeif.github.io/removeif-demo/)
 
@@ -53,7 +53,7 @@ v11.1.0
 ```  
 #### 在博客目录下clone主题代码
 ```jshelllanguage
-git clone https://github.com/Liao-Vue-love/hexo-theme-amazing.git /themes/amazing
+git clone https://github.com/Leon9916/hexo-blog/hexo-theme-amazing.git /themes/amazing
 ```
 #### 开始部分配置：
 **敲黑板！！！！首先全局以及主题中的`_config.yml`配置成自己的对应参数。**  
@@ -300,11 +300,11 @@ $ hexo d #推到远程
 ok,enjoy it！👏👏👏
 
 ### 写在后面
-如果你有问题请反馈: [issues](https://github.com/Liao-Vue-love/hexo-theme-icarus-removeif/issues) （请务必先于issues中寻找答案）  
-如果你喜欢该主题: [star](https://github.com/Liao-Vue-love/hexo-theme-icarus-removeif)  
-如果你想定制主题: [fork](https://github.com/Liao-Vue-love/hexo-theme-icarus-removeif) 
+如果你有问题请反馈: [issues](https://github.com/Leon9916/hexo-blog/hexo-theme-icarus-removeif/issues) （请务必先于issues中寻找答案）  
+如果你喜欢该主题: [star](https://github.com/Leon9916/hexo-blog/hexo-theme-icarus-removeif)  
+如果你想定制主题: [fork](https://github.com/Leon9916/hexo-blog/hexo-theme-icarus-removeif) 
 ### License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Liao-Vue-love/hexo-theme-icarus-removeif/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Leon9916/hexo-blog/hexo-theme-icarus-removeif/blob/master/LICENSE) file for details.
 
 ### 其余主题彩蛋
 **文章中横竖图demo；对于横竖图推荐分开使用，且长宽一致的，如统一手机拍照、电脑截图**

@@ -26,9 +26,12 @@ class Footer extends Component {
                         <p class="size-small">
                             <span dangerouslySetInnerHTML={{ __html: `&copy; ${siteYear} ${author || siteTitle}` }}></span>
                             &nbsp;&nbsp;Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a
-                                href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>,Modify by <a href="https://github.com/Liao-Vue-love" target="_blank">removeif</a>&nbsp;
+                                href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>,Modify by <a href="https://github.com/Leon9916/hexo-blog" target="_blank">removeif</a>&nbsp;
                             <br />
-                            &copy; 版权说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于自己学习交流，如有侵权，请<a href="mailto:2476288442@qq.com">联系</a>，立即处理]
+                            &copy; 版权2说明：[本网站所有内容均收集于互联网或自己创作,<br />&nbsp;&nbsp;&nbsp;&nbsp;方便于自己学习交流，如有侵权，请<a href="mailto:2476288442@qq.com">联系</a>，立即处理]
+                            <br />
+                            <script type="text/javascript" src="/js/statistics.js"></script>
+                            <span id="statistic-times">网站运行时间统计加载中...</span>
                         </p>
                     </div>
                     <div class="level-end">

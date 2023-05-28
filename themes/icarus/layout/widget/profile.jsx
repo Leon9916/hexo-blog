@@ -19,42 +19,6 @@ class Profile extends Component {
         </div>;
     }
 
-    // 获取舔狗日记
-    randomTianDogData(list) {
-        // 随机取出一个元素
-        const randomIndex = Math.floor(Math.random() * list.length); // 生成 0 到 list.length-1 之间的整数
-        return list[randomIndex]; // 根据随机下标获取数组中的元素
-    }
-
-    // 获取年月日
-    randomTianDogDate() {
-        // 获取 1970 年 1 月 1 日至今的毫秒数范围
-        const minTimestamp = new Date('2020-01-01').getTime();
-        const maxTimestamp = new Date().getTime();
-
-        // 生成指定范围内的随机日期
-        const randomTimestamp = Math.floor(Math.random() * (maxTimestamp - minTimestamp)) + minTimestamp;
-        const randomDate = new Date(randomTimestamp);
-
-        // 获取随机日期的年、月、日
-        const year = randomDate.getFullYear();
-        const month = randomDate.getMonth() + 1;
-        const day = randomDate.getDate();
-
-        return `${year}-${month}-${day}` // 输出随机的年月日
-    }
-
-    hitokotoJs() {
-        return `function getYiyan(){
-            $('#hitokoto').html("");
-            $('#hitokoto').append(
-            "<p>${this.randomTianDogDate()}</p><p>${this.randomTianDogData(weathers)}</p>"+
-            "<strong style='color: #3273dc;'>${this.randomTianDogData(diaries)}</strong>"
-            );   
-        }
-            $(function (){getYiyan();});`
-    }
-
     render() {
         const {
             avatar,
@@ -67,6 +31,48 @@ class Profile extends Component {
             followTitle,
             socialLinks
         } = this.props;
+
+        const hitokotoJs = `
+                                // 获取舔狗日记
+                                const randomTianDogData = function (list) {
+                                    // 随机取出一个元素
+                                    const randomIndex = Math.floor(Math.random() * list.length); // 生成 0 到 list.length-1 之间的整数
+                                    return list[randomIndex]; // 根据随机下标获取数组中的元素
+                                }
+                                // 获取年月日
+                                const randomTianDogDate = function () {
+                                    // 获取 1970 年 1 月 1 日至今的毫秒数范围
+                                    const minTimestamp = new Date('2020-01-01').getTime();
+                                    const maxTimestamp = new Date().getTime();
+                        
+                                    // 生成指定范围内的随机日期
+                                    const randomTimestamp = Math.floor(Math.random() * (maxTimestamp - minTimestamp)) + minTimestamp;
+                                    const randomDate = new Date(randomTimestamp);
+                        
+                                    // 获取随机日期的年、月、日
+                                    const year = randomDate.getFullYear();
+                                    const month = randomDate.getMonth() + 1;
+                                    const day = randomDate.getDate();
+                        
+                                    return year + '-' + month + '-' + day // 输出随机的年月日
+                                }
+
+                                function getYiyan(){
+                                    $.when(
+                                      $.getJSON('http://111.230.213.88/mockData/weathers.json'),
+                                      $.getJSON('http://111.230.213.88/mockData/diaries.json')
+                                    ).done(function(data1, data2) {
+                                      // 在这里对两个接口的数据进行操作
+                                      $('#hitokoto').html("");
+                                      $('#hitokoto').append(
+                                        "<p>" + randomTianDogDate() + "</p><p>" + randomTianDogData(data1[0]) + "</p>" +
+                                        "<strong style='color: #3273dc;'>" + randomTianDogData(data2[0]) + "</strong>"
+                                      );  
+                                    }).fail(function() {
+                                      console.log('Error: 舔狗日记获取失败.');
+                                    });
+                                }
+                                $(function (){getYiyan();$('#hitokoto').click(function(){getYiyan();})});`;
 
 
         return <div class="card widget">
@@ -119,7 +125,7 @@ class Profile extends Component {
                 {this.renderSocialLinks(socialLinks)}
                 <hr />
                 <p id="hitokoto">:D 舔狗日记获取中...</p>
-                <script type="text/javascript" dangerouslySetInnerHTML={{ __html: this.hitokotoJs() }} defer={true}></script>
+                <script type="text/javascript" dangerouslySetInnerHTML={{ __html: hitokotoJs }} defer={true}></script>
             </div>
         </div>;
     }

@@ -14,7 +14,7 @@ function createtime() {
         seconds = (now - n) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,
         snum = Math.round(seconds),
     1 == String(snum).length && (snum = "0" + snum),
-        document.getElementById("statistic-times").innerHTML = "❤️本站自<span><strong> 2022.11.11</strong><span> 已运行 <strong>" + dnum + "</strong> 天 <strong>" + hnum + "</strong> 小时 <strong>" + mnum + "</strong> 分 <strong>" + snum + "</strong> 秒！❤️";
+        document.getElementById("statistic-times").innerHTML = "❤️本站自<span><strong> 2022.1.1</strong><span> 已运行 <strong>" + dnum + "</strong> 天 <strong>" + hnum + "</strong> 小时 <strong>" + mnum + "</strong> 分 <strong>" + snum + "</strong> 秒！❤️";
 }
 
 var now = new Date;
