@@ -81,6 +81,7 @@ navbar:
         相册: /album
         关于: /about
         Chat哥: /chat_brother
+        Leon-UI: http://111.230.213.88/
     # Links to be shown on the right of the navigation bar
     links:
         Download on GitHub:
