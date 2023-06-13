@@ -5,7 +5,7 @@ logo: https://s1.ax1x.com/2023/05/25/p9H4zND.png #https://cdn.jsdelivr.net/gh/re
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: https://p3-passport.byteimg.com/img/user-avatar/d8bc7351ac3c93b11cd3146be24a0cba~100x100.awebp
+    favicon: https://cdn-us.imgs.moe/2023/06/13/64885bcb8efd8.png
     # Canonical URL of the current page
     canonical_url:
     # Open Graph metadata
@@ -22,7 +22,7 @@ head:
         url: https://removeif.github.io/
         # Page cover (og:image) (optional) Default to the Open Graph image or thumbnail of the page
         # You should leave this blank for most of the time
-        image: https://p3-passport.byteimg.com/img/user-avatar/d8bc7351ac3c93b11cd3146be24a0cba~100x100.awebp
+        image: https://cdn-us.imgs.moe/2023/06/13/64885bcb8efd8.png
         # Site name (og:site_name) (optional)
         # You should leave this blank for most of the time
         site_name: 爷ゝ本霸气っ
@@ -61,7 +61,7 @@ head:
         author: removeif
         # Page images (optional) Default to the Open Graph image or thumbnail of the page
         # You should leave this blank for most of the time
-        image: https://p3-passport.byteimg.com/img/user-avatar/d8bc7351ac3c93b11cd3146be24a0cba~100x100.awebp
+        image: https://cdn-us.imgs.moe/2023/06/13/64885bcb8efd8.png
     # Additional HTML meta tags in an array
     meta:
         # Meta tag specified in <attribute>=<value> style
@@ -186,7 +186,7 @@ widgets:
         # Author's current location to be shown in the profile widget
         location: 鹏城
         # Path or URL to the avatar to be shown in the profile widget
-        avatar: https://p3-passport.byteimg.com/img/user-avatar/d8bc7351ac3c93b11cd3146be24a0cba~100x100.awebp
+        avatar: https://cdn-us.imgs.moe/2023/06/13/64885bcb8efd8.png
         # Whether show the rounded avatar image
         avatar_rounded: true
         # Email address for the Gravatar

@@ -2,7 +2,7 @@
 title: Vue 2 即将成为过去
 recommend: 1
 toc: true
-keywords: categories-tool
+keywords: categories-web
 thumbnail: 'https://s1.ax1x.com/2023/05/25/p9bVu01.png'
 tags: 前端
 categories:

@@ -2,7 +2,7 @@
 title: 渲染器：组件是如何被渲染成 DOM 的
 recommend: 2
 toc: true
-keywords: categories-tool
+keywords: categories-web
 thumbnail: 'https://cdn-us.imgs.moe/2023/05/26/646f8bc3d6bde.png'
 tags: 前端
 categories:

@@ -2,7 +2,7 @@
 title: 响应式原理：基于 Proxy 的响应式是什么样的？
 recommend: 6
 toc: true
-keywords: categories-tool
+keywords: categories-web
 thumbnail: 'https://cdn-us.imgs.moe/2023/05/26/646f9dbdbc919.png'
 tags: 前端
 categories:

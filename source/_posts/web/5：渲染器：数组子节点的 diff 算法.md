@@ -2,7 +2,7 @@
 title: 渲染器：数组子节点的 diff 算法
 recommend: 5
 toc: true
-keywords: categories-tool
+keywords: categories-web
 thumbnail: 'https://cdn-us.imgs.moe/2023/05/26/646f9bc35003d.png'
 tags: 前端
 categories:
