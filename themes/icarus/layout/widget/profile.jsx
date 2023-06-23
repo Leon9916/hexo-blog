@@ -29,10 +29,21 @@ class Profile extends Component {
             counter,
             followLink,
             followTitle,
-            socialLinks
+            socialLinks,
+            is_play,
+            music_url
         } = this.props;
-
-        const hitokotoJs = `
+        const hitokotoJs = `    
+                                // 首页音乐
+                                function playMusicOnHover() {
+                                  if (document.location.pathname === '/') {
+                                    const index_Music = document.querySelector('#indexMusic');
+                                    if(index_Music) {
+                                        index_Music.play();
+                                    }
+                                  }
+                                }
+                                document.addEventListener('mouseover', playMusicOnHover);
                                 // 获取舔狗日记
                                 const randomTianDogData = function (list) {
                                     // 随机取出一个元素
@@ -124,6 +135,10 @@ class Profile extends Component {
                 </div> : null} */}
                 {this.renderSocialLinks(socialLinks)}
                 <hr />
+                {/*是否开启首页音乐*/}
+                {is_play ? <audio id="indexMusic">
+                    <source src= {music_url} type="audio/mp3" />
+                </audio> : null}
                 <p id="hitokoto">:D 舔狗日记获取中...</p>
                 <script type="text/javascript" dangerouslySetInnerHTML={{ __html: hitokotoJs }} defer={true}></script>
             </div>
@@ -141,7 +156,9 @@ module.exports = cacheComponent(Profile, 'widget.profile', props => {
         author_title,
         location,
         follow_link,
-        social_links
+        social_links,
+        is_play,
+        music_url,
     } = widget;
     const { url_for, _p, __ } = helper;
 
@@ -199,6 +216,8 @@ module.exports = cacheComponent(Profile, 'widget.profile', props => {
         },
         followLink: url_for(follow_link),
         followTitle: __('widget.follow'),
-        socialLinks
+        socialLinks,
+        is_play,
+        music_url,
     };
 });

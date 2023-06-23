@@ -193,7 +193,11 @@ widgets:
         gravatar:
         # URL or path for the follow button
         follow_link: 'https://weibo.com/u/3050419984'
-        # Links to be shown on the bottom of the profile widget
+        # 是否进入网站自动播放音乐
+        is_play: true
+        # 自动播放音乐的外链
+        music_url: 'http://www.ytmp3.cn/down/76431.mp3'
+        # 概要文件的链接显示在底部小部件
         social_links: {}
             # Github:
             #     icon: fab fa-github
